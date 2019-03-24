@@ -198,7 +198,7 @@ class MovieFilter (FilterSet):
     def filter_by_genre(self, queryset, name, value):
         genre_names = value.strip().split(',')
         genres = Genres.objects.filter(name__in=genre_names)
-        return queryset.filter(genres__in=genres)
+        return queryset.filter(movie_genre__in=genres)
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movies.objects.all()
