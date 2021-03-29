@@ -14,7 +14,7 @@ Pillow==5.4.1
 psycopg2==2.7.7
 psycopg2-binary==2.7.7
 pycparser==2.19
-Pygments==2.3.1
+Pygments==2.7.4
 PyJWT==1.7.1
 pytz==2018.9
 requests==2.21.0
